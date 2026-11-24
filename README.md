@@ -78,6 +78,9 @@ Vill du ha ett annat utseende, se avsnittet Utseenden längre ner.
 
 ## Utseenden
 
+![screenshot](https://github.com/Hagbard-84/nordisk-karnkraft-card/blob/main/assets/karnkraft_varianter.png?raw=true)
+
+
 Kortet har fyra utseenden. Välj med `variant:` i kortets YAML. Utan val används `bars`.
 
 | `variant` | Utseende |
