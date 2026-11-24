@@ -45,6 +45,7 @@ class NordiskKarnkraftCard extends HTMLElement {
     this._config = {
       title: "Svensk kärnkraft",
       reduced_threshold: 0.95,
+      equal_width: true,
       ...config,
     };
     this._sig = "";
@@ -126,7 +127,7 @@ class NordiskKarnkraftCard extends HTMLElement {
     const strip = data
       .map((d) => {
         const pct = d.max && d.power ? Math.min(100, (d.power / d.max) * 100) : 0;
-        return `<div class="seg" style="flex:${d.max || 1}" title="${esc(d.name)}: ${d.power == null ? "okänd" : fmt(d.power)} / ${fmt(d.max)} MW">
+        return `<div class="seg" style="flex:${this._config.equal_width === false ? d.max || 1 : 1}" title="${esc(d.name)}: ${d.power == null ? "okänd" : fmt(d.power)} / ${fmt(d.max)} MW">
           <div class="fill" style="height:${pct}%;background:${STATES[d.key].color}"></div></div>`;
       })
       .join("");

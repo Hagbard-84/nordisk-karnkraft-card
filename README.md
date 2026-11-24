@@ -74,6 +74,8 @@ reactors:
 
 Spara. Om du klickar på en reaktor i listan öppnas dess historik.
 
+Staplarna är lika breda som standard. Vill du i stället att bredden följer varje reaktors maxeffekt, lägg till `equal_width: false` under `type:`.
+
 ## Inställningar för add-onet
 
 | Inställning | Standard | Beskrivning |
