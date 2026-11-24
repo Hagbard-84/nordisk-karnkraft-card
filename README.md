@@ -19,7 +19,7 @@ Du behöver **Home Assistant OS** eller **Supervised**, eftersom add-ons inte fi
 
 Klicka på knappen, eller gör det manuellt:
 
-[![Lägg till i Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FANVANDARE%2FREPO)
+[![Lägg till i Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/Hagbard-84/nordisk-karnkraft-card.git)
 
 Manuellt: gå till **Inställningar → Add-ons → Add-on-butik**, klicka på de tre prickarna uppe till höger, välj **Databaser** (Repositories) och klistra in:
 
