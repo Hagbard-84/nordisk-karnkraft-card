@@ -1,0 +1,24 @@
+name: Nordisk kärnkraft
+version: "0.1.3"
+slug: nordisk_karnkraft
+description: Hämtar effekt och status för Sveriges kärnreaktorer och skapar sensorer i Home Assistant.
+url: https://www.nordiskkarnkraft.se
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - armhf
+  - i386
+init: false
+startup: application
+homeassistant_api: true
+map:
+  - homeassistant_config:rw
+options:
+  url: "https://www.nordiskkarnkraft.se/sv/se"
+  interval_minutes: 5
+  install_card: true
+schema:
+  url: url
+  interval_minutes: int(3,60)
+  install_card: bool
