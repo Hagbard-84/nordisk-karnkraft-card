@@ -74,6 +74,8 @@ reactors:
 
 Spara. Om du klickar på en reaktor i listan öppnas dess historik.
 
+![screenshot](https://github.com/Hagbard-84/nordisk-karnkraft-card/blob/main/assets/nordisk_karnkraft_card.png?raw=true)
+
 Staplarna är lika breda som standard. Vill du i stället att bredden följer varje reaktors maxeffekt, lägg till `equal_width: false` under `type:`.
 
 ## Inställningar för add-onet
