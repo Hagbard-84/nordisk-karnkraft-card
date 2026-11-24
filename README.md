@@ -24,7 +24,7 @@ Klicka på knappen, eller gör det manuellt:
 Manuellt: gå till **Inställningar → Add-ons → Add-on-butik**, klicka på de tre prickarna uppe till höger, välj **Databaser** (Repositories) och klistra in:
 
 ```
-https://github.com/ANVANDARE/REPO
+https://github.com/Hagbard-84/nordisk-karnkraft-card.git
 ```
 
 ### 2. Installera och starta
