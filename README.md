@@ -19,12 +19,12 @@ Du behöver **Home Assistant OS** eller **Supervised**, eftersom add-ons inte fi
 
 Klicka på knappen, eller gör det manuellt:
 
-[![Lägg till i Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/Hagbard-84/nordisk-karnkraft-card.git)
+[![Lägg till i Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FHagbard-84%2Fnordisk-karnkraft-card)
 
 Manuellt: gå till **Inställningar → Add-ons → Add-on-butik**, klicka på de tre prickarna uppe till höger, välj **Databaser** (Repositories) och klistra in:
 
 ```
-https://github.com/Hagbard-84/nordisk-karnkraft-card.git
+https://github.com/Hagbard-84/nordisk-karnkraft-card
 ```
 
 ### 2. Installera och starta
@@ -74,9 +74,29 @@ reactors:
 
 Spara. Om du klickar på en reaktor i listan öppnas dess historik.
 
-![screenshot](https://github.com/Hagbard-84/nordisk-karnkraft-card/blob/main/assets/nordisk_karnkraft_card.png?raw=true)
+Vill du ha ett annat utseende, se avsnittet Utseenden längre ner.
 
-Staplarna är lika breda som standard. Vill du i stället att bredden följer varje reaktors maxeffekt, lägg till `equal_width: false` under `type:`.
+## Utseenden
+
+Kortet har fyra utseenden. Välj med `variant:` i kortets YAML. Utan val används `bars`.
+
+| `variant` | Utseende |
+|---|---|
+| `bars` | Total effekt, en kolumn per reaktor och en lista under. |
+| `compact` | Smalt kort med total effekt och en tunn stapel per reaktor, med korta namn (O3, R3, R4, F1, F2, F3). Passar där du har lite plats. |
+| `rows` | Total effekt och en lista där varje reaktor har en egen framstegsstapel. |
+| `ring` | En ring med ett segment per reaktor och total effekt i mitten, med listan under. |
+
+Exempel:
+
+```yaml
+type: custom:nordisk-karnkraft-card
+variant: ring
+reactors:
+  # ...samma lista som ovan
+```
+
+I `bars` och `ring` är segmenten lika stora som standard. Lägg till `equal_width: false` om storleken ska följa varje reaktors maxeffekt.
 
 ## Inställningar för add-onet
 

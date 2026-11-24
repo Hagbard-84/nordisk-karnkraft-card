@@ -1,5 +1,5 @@
 name: Nordisk kärnkraft
-version: "0.1.4"
+version: "0.1.5"
 slug: nordisk_karnkraft
 description: Hämtar effekt och status för Sveriges kärnreaktorer och skapar sensorer i Home Assistant.
 url: https://www.nordiskkarnkraft.se
